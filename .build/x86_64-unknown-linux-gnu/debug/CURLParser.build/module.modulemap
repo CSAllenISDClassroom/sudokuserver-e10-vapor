@@ -1,0 +1,4 @@
+module CURLParser {
+    umbrella "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/vapor/Sources/CURLParser/include"
+    export *
+}

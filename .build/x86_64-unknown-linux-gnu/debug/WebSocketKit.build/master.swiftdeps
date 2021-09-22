@@ -1,0 +1,10 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "72f17cbc7c3b0b741af33ef0ea21ce02"
+build_time: [1632148545, 701304331]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/Exports.swift": [1632148407, 722972550]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/HTTPInitialRequestHandler.swift": [1632148407, 726972348]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket+Connect.swift": [1632148407, 730972145]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket.swift": [1632148407, 734971943]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketClient.swift": [1632148407, 738971740]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketHandler.swift": [1632148407, 742971538]

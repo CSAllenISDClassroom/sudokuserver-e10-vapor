@@ -1,0 +1,18 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "f4495de6cba721e9650166b5885cff09"
+build_time: [1632148533, 254705560]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/DebugInboundEventsHandler.swift": [1632148405, 331093594]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/DebugOutboundEventsHandler.swift": [1632148405, 335093392]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/FixedLengthFrameDecoder.swift": [1632148405, 339093189]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/JSONRPCFraming+ContentLengthHeader.swift": [1632148405, 343092987]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/JSONRPCFraming.swift": [1632148405, 343092987]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LengthFieldBasedFrameDecoder.swift": [1632148405, 347092784]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LengthFieldPrepender.swift": [1632148405, 351092582]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LineBasedFrameDecoder.swift": [1632148405, 355092380]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/NIOExtrasError.swift": [1632148405, 359092177]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/NIOLengthFieldBitLength.swift": [1632148405, 363091975]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/PCAPRingBuffer.swift": [1632148405, 367091772]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/QuiescingHelper.swift": [1632148405, 371091570]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/RequestResponseHandler.swift": [1632148405, 371091570]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/WritePCAPHandler.swift": [1632148405, 375091368]

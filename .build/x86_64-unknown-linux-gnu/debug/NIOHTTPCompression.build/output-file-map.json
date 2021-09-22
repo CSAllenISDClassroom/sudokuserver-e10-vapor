@@ -1,0 +1,41 @@
+{
+  "": {
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/master.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPCompression.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPCompression.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPCompression.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPCompression~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPCompression.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPDecompression.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPDecompression.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPDecompression.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPDecompression~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPDecompression.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestCompressor.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestCompressor.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestCompressor.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestCompressor~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestCompressor.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestDecompressor.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestDecompressor.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestDecompressor.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestDecompressor~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPRequestDecompressor.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseCompressor.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseCompressor.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseCompressor.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseCompressor~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseCompressor.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseDecompressor.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseDecompressor.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseDecompressor.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseDecompressor~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOHTTPCompression.build/HTTPResponseDecompressor.swiftdeps"
+  }
+}

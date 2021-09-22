@@ -1,0 +1,7 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "b11999fea7a49934a970873028cab77f"
+build_time: [1632148533, 230932338]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOTLS/ApplicationProtocolNegotiationHandler.swift": [1632148420, 730314264]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOTLS/SNIHandler.swift": [1632148420, 734314061]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOTLS/TLSEvents.swift": [1632148420, 738313859]

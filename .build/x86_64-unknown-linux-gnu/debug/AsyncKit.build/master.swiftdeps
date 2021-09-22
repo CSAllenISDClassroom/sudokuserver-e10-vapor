@@ -1,0 +1,23 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "b519884bff387cb5de24eb68925d48ab"
+build_time: [1632148533, 283805669]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolError.swift": [1632148406, 191050075]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolItem.swift": [1632148406, 195049873]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolSource.swift": [1632148406, 199049671]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopConnectionPool.swift": [1632148406, 203049468]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopGroupConnectionPool.swift": [1632148406, 207049265]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Flatten.swift": [1632148406, 211049063]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Future.swift": [1632148406, 215048861]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Collection+Flatten.swift": [1632148406, 219048659]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue+Sequence.swift": [1632148406, 223048456]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue.swift": [1632148406, 227048253]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Collection.swift": [1632148406, 231048051]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Conjunctions.swift": [1632148406, 235047849]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Optional.swift": [1632148406, 239047647]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Throwing.swift": [1632148406, 243047443]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Transform.swift": [1632148406, 247047241]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/FutureExtensions.swift": [1632148406, 247047241]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/FutureOperators.swift": [1632148406, 251047039]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Optional+StrictMap.swift": [1632148406, 255046837]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/async-kit/Sources/AsyncKit/Exports.swift": [1632148406, 259046634]

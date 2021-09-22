@@ -1,0 +1,4 @@
+module CBacktrace {
+    umbrella "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+    export *
+}

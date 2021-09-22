@@ -1,0 +1,10 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "586585cdded78e381397116cc2ceea62"
+build_time: [1632148539, 151186383]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPCompression.swift": [1632148405, 411089546]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPDecompression.swift": [1632148405, 415089344]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestCompressor.swift": [1632148405, 419089141]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPRequestDecompressor.swift": [1632148405, 423088938]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseCompressor.swift": [1632148405, 427088736]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOHTTPCompression/HTTPResponseDecompressor.swift": [1632148405, 431088534]

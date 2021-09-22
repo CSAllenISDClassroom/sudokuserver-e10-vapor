@@ -1,0 +1,7 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "c1c2b5b6ca7c94a86cd254749d9f7e18"
+build_time: [1632148518, 462070407]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOAtomic.swift": [1632148420, 222339973]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/atomics.swift": [1632148420, 226339770]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/lock.swift": [1632148420, 234339366]
