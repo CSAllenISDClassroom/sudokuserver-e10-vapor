@@ -1,0 +1,5 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "4f7f5773879ade5bc5b8a68a90e64c4a"
+build_time: [1632148532, 846055558]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIO/Exports.swift": [1632148420, 186341795]

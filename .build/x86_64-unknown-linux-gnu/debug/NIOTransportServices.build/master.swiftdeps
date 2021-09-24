@@ -1,0 +1,18 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "32a320be15c32ea719e3686f444eb302"
+build_time: [1632148536, 971800132]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOFilterEmptyWritesHandler.swift": [1632148404, 767122134]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSBootstraps.swift": [1632148404, 771121932]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSChannelOptions.swift": [1632148404, 775121729]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSConnectionBootstrap.swift": [1632148404, 779121527]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSConnectionChannel.swift": [1632148404, 783121325]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSErrors.swift": [1632148404, 787121122]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSEventLoop.swift": [1632148404, 791120920]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSEventLoopGroup.swift": [1632148404, 795120717]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSListenerBootstrap.swift": [1632148404, 799120515]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSListenerChannel.swift": [1632148404, 803120313]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/NIOTSNetworkEvents.swift": [1632148404, 807120111]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/SocketAddress+NWEndpoint.swift": [1632148404, 811119908]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/StateManagedChannel.swift": [1632148404, 815119705]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-transport-services/Sources/NIOTransportServices/TCPOptions+SocketChannelOption.swift": [1632148404, 819119503]

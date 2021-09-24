@@ -1,0 +1,269 @@
+{
+  "": {
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/master.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BSDSocketAPICommon.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPICommon.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPICommon.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPICommon~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPICommon.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BSDSocketAPIPosix.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIPosix.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIPosix.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIPosix~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIPosix.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BSDSocketAPIWindows.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIWindows.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIWindows.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIWindows~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BSDSocketAPIWindows.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BaseSocket.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocket.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocket.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocket~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocket.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BaseSocketChannel+SocketOptionProvider.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel+SocketOptionProvider.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel+SocketOptionProvider.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel+SocketOptionProvider~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel+SocketOptionProvider.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BaseSocketChannel.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseSocketChannel.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/BaseStreamSocketChannel.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseStreamSocketChannel.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseStreamSocketChannel.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseStreamSocketChannel~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/BaseStreamSocketChannel.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Bootstrap.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Bootstrap.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Bootstrap.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Bootstrap~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Bootstrap.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/ControlMessage.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ControlMessage.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ControlMessage.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ControlMessage~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ControlMessage.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/DatagramVectorReadManager.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/DatagramVectorReadManager.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/DatagramVectorReadManager.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/DatagramVectorReadManager~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/DatagramVectorReadManager.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/FileDescriptor.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/FileDescriptor.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/FileDescriptor.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/FileDescriptor~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/FileDescriptor.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/GetaddrinfoResolver.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/GetaddrinfoResolver.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/GetaddrinfoResolver.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/GetaddrinfoResolver~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/GetaddrinfoResolver.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/HappyEyeballs.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/HappyEyeballs.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/HappyEyeballs.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/HappyEyeballs~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/HappyEyeballs.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/IO.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IO.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IO.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IO.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/IntegerBitPacking.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerBitPacking.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerBitPacking.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerBitPacking~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerBitPacking.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/IntegerTypes.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerTypes.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerTypes.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerTypes~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/IntegerTypes.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Linux.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Linux.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Linux.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Linux~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Linux.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/LinuxCPUSet.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxCPUSet.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxCPUSet.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxCPUSet~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxCPUSet.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/LinuxUring.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxUring.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxUring.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxUring~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/LinuxUring.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/MultiThreadedEventLoopGroup.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/MultiThreadedEventLoopGroup.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/MultiThreadedEventLoopGroup.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/MultiThreadedEventLoopGroup~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/MultiThreadedEventLoopGroup.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/NIOThreadPool.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NIOThreadPool.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NIOThreadPool.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NIOThreadPool~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NIOThreadPool.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/NonBlockingFileIO.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NonBlockingFileIO.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NonBlockingFileIO.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NonBlockingFileIO~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/NonBlockingFileIO.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/PendingDatagramWritesManager.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingDatagramWritesManager.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingDatagramWritesManager.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingDatagramWritesManager~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingDatagramWritesManager.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/PendingWritesManager.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingWritesManager.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingWritesManager.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingWritesManager~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PendingWritesManager.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/PipeChannel.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipeChannel.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipeChannel.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipeChannel~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipeChannel.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/PipePair.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipePair.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipePair.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipePair~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PipePair.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/PointerHelpers.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PointerHelpers.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PointerHelpers.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PointerHelpers~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/PointerHelpers.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Resolver.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Resolver.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Resolver.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Resolver~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Resolver.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Selectable.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Selectable.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Selectable.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Selectable~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Selectable.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectableChannel.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableChannel.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableChannel.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableChannel~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableChannel.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectableEventLoop.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableEventLoop.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableEventLoop.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableEventLoop~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectableEventLoop.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectorEpoll.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorEpoll.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorEpoll.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorEpoll~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorEpoll.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectorGeneric.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorGeneric.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorGeneric.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorGeneric~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorGeneric.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectorKqueue.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorKqueue.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorKqueue.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorKqueue~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorKqueue.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SelectorUring.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorUring.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorUring.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorUring~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SelectorUring.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/ServerSocket.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ServerSocket.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ServerSocket.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ServerSocket~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ServerSocket.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Socket.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Socket.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Socket.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Socket~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Socket.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SocketChannel.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketChannel.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketChannel.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketChannel~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketChannel.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/SocketProtocols.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketProtocols.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketProtocols.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketProtocols~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/SocketProtocols.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/System.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/System.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/System.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/System~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/System.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Thread.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Thread.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Thread.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Thread~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Thread.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/ThreadPosix.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadPosix.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadPosix.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadPosix~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadPosix.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/ThreadWindows.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadWindows.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadWindows.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadWindows~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/ThreadWindows.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOPosix/Utilities.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Utilities.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Utilities.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Utilities~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOPosix.build/Utilities.swiftdeps"
+  }
+}

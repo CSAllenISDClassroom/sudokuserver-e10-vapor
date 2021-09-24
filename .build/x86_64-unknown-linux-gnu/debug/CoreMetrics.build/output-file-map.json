@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/master.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-metrics/Sources/CoreMetrics/Locks.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Locks.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Locks.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Locks~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Locks.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-metrics/Sources/CoreMetrics/Metrics.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Metrics.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Metrics.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Metrics~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/CoreMetrics.build/Metrics.swiftdeps"
+  }
+}

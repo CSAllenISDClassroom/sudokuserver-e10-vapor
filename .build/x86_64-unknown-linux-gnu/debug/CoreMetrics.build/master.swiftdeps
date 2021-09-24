@@ -1,0 +1,6 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "7db063cf404a02a3bb7f42873a002758"
+build_time: [1632148490, 223307638]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-metrics/Sources/CoreMetrics/Locks.swift": [1632148407, 214998257]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-metrics/Sources/CoreMetrics/Metrics.swift": [1632148407, 218998054]

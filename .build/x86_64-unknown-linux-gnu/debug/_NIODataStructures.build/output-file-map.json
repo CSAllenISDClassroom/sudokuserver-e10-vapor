@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/master.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/_NIODataStructures/Heap.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/Heap.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/Heap.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/Heap~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/Heap.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/_NIODataStructures/PriorityQueue.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/PriorityQueue.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/PriorityQueue.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/PriorityQueue~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/_NIODataStructures.build/PriorityQueue.swiftdeps"
+  }
+}

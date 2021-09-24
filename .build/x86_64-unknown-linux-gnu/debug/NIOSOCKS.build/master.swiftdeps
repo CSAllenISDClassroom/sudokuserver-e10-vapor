@@ -1,0 +1,16 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "eb5595177047fa4965fcb326ae133ce2"
+build_time: [1632148533, 217345975]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSClientHandler.swift": [1632148405, 435088332]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSServerHandshakeHandler.swift": [1632148405, 439088129]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/AuthenticationMethod.swift": [1632148405, 443087926]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/ClientGreeting.swift": [1632148405, 447087724]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Errors.swift": [1632148405, 451087522]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Helpers.swift": [1632148405, 455087320]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Messages.swift": [1632148405, 459087117]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSRequest.swift": [1632148405, 463086914]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSResponse.swift": [1632148405, 467086712]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SelectedAuthenticationMethod.swift": [1632148405, 471086510]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ClientStateMachine.swift": [1632148405, 475086308]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ServerStateMachine.swift": [1632148405, 479086105]

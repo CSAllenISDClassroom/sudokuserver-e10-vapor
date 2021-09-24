@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/master.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/DebugInboundEventsHandler.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugInboundEventsHandler.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugInboundEventsHandler.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugInboundEventsHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugInboundEventsHandler.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/DebugOutboundEventsHandler.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugOutboundEventsHandler.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugOutboundEventsHandler.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugOutboundEventsHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/DebugOutboundEventsHandler.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/FixedLengthFrameDecoder.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/FixedLengthFrameDecoder.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/FixedLengthFrameDecoder.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/FixedLengthFrameDecoder~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/FixedLengthFrameDecoder.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/JSONRPCFraming+ContentLengthHeader.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming+ContentLengthHeader.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming+ContentLengthHeader.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming+ContentLengthHeader~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming+ContentLengthHeader.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/JSONRPCFraming.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/JSONRPCFraming.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LengthFieldBasedFrameDecoder.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldBasedFrameDecoder.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldBasedFrameDecoder.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldBasedFrameDecoder~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldBasedFrameDecoder.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LengthFieldPrepender.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldPrepender.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldPrepender.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldPrepender~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LengthFieldPrepender.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/LineBasedFrameDecoder.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LineBasedFrameDecoder.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LineBasedFrameDecoder.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LineBasedFrameDecoder~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/LineBasedFrameDecoder.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/NIOExtrasError.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOExtrasError.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOExtrasError.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOExtrasError~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOExtrasError.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/NIOLengthFieldBitLength.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOLengthFieldBitLength.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOLengthFieldBitLength.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOLengthFieldBitLength~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/NIOLengthFieldBitLength.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/PCAPRingBuffer.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/PCAPRingBuffer.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/PCAPRingBuffer.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/PCAPRingBuffer~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/PCAPRingBuffer.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/QuiescingHelper.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/QuiescingHelper.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/QuiescingHelper.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/QuiescingHelper~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/QuiescingHelper.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/RequestResponseHandler.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/RequestResponseHandler.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/RequestResponseHandler.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/RequestResponseHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/RequestResponseHandler.swiftdeps"
+  },
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-extras/Sources/NIOExtras/WritePCAPHandler.swift": {
+    "dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/WritePCAPHandler.d",
+    "object": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/WritePCAPHandler.swift.o",
+    "swiftmodule": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/WritePCAPHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/li-fan/projects/sudokuserver-e10-vapor/.build/x86_64-unknown-linux-gnu/debug/NIOExtras.build/WritePCAPHandler.swiftdeps"
+  }
+}

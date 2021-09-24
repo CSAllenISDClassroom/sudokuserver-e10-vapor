@@ -1,0 +1,7 @@
+version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
+options: "56024c7ceb464a208d35f24483d7e1e3"
+build_time: [1632148533, 218581101]
+inputs:
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOFoundationCompat/ByteBuffer-foundation.swift": [1632148420, 454328232]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOFoundationCompat/Codable+ByteBuffer.swift": [1632148420, 462327827]
+  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOFoundationCompat/JSONSerialization+ByteBuffer.swift": [1632148420, 466327625]
