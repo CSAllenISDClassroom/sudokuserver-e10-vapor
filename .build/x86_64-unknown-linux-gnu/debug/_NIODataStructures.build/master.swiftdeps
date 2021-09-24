@@ -1,6 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "075532b31d2f0bcf6dc154e54298f08d"
-build_time: [1632148490, 203689852]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/_NIODataStructures/Heap.swift": [1632148420, 834309000]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/_NIODataStructures/PriorityQueue.swift": [1632148420, 834309000]

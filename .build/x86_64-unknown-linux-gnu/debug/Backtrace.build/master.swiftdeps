@@ -1,6 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "f82c5257202d804469b16f85bb8a41bf"
-build_time: [1632148529, 810069030]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-backtrace/Sources/Backtrace/Backtrace.swift": [1632148419, 130395237]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-backtrace/Sources/Backtrace/Demangle.swift": [1632148419, 134395035]

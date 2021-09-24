@@ -1,4 +1,0 @@
-module CNIOBoringSSL {
-    umbrella header "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio-ssl/Sources/CNIOBoringSSL/include/CNIOBoringSSL.h"
-    export *
-}

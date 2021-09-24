@@ -1,5 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "059d10c4301503c15119ec6d24d9de9e"
-build_time: [1632148526, 797100190]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-nio/Sources/NIOEmbedded/Embedded.swift": [1632148420, 450328434]

@@ -1,7 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "f10f1c2aac2888a8fa576bfafce1b751"
-build_time: [1632148490, 204224923]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-log/Sources/Logging/Locks.swift": [1632148413, 942657786]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift": [1632148413, 942657786]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/swift-log/Sources/Logging/Logging.swift": [1632148413, 946657583]

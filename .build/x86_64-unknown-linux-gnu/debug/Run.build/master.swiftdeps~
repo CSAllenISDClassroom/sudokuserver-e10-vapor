@@ -1,5 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "03306f4af7fe1a9a391c1b1b61dc7598"
-build_time: [1632148573, 441115431]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/Sources/Run/main.swift": [1632148380, 500350077]

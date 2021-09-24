@@ -1,8 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "7ac18ad220bc7312c77cc4ea8439ecb1"
-build_time: [1632153718, 302277623]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/Sources/App/board.swift": !private [1632153649, 801989021]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/Sources/App/boardID.swift": !private [1632148380, 488350685]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/Sources/App/configure.swift": [1632148380, 492350482]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/Sources/App/routes.swift": [1632153288, 592278117]

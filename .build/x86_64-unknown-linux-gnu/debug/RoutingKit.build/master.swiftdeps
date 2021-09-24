@@ -1,9 +1,0 @@
-version: "Swift version 5.4.2 (swift-5.4.2-RELEASE)"
-options: "0dcb07d2529e63908de210981a40176b"
-build_time: [1632148490, 217686358]
-inputs:
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/routing-kit/Sources/RoutingKit/AnyRouter.swift": [1632148408, 142951296]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/routing-kit/Sources/RoutingKit/Parameters.swift": [1632148408, 146951094]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/routing-kit/Sources/RoutingKit/PathComponent.swift": [1632148408, 150950891]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/routing-kit/Sources/RoutingKit/Router.swift": [1632148408, 154950689]
-  "/home/li-fan/projects/sudokuserver-e10-vapor/.build/checkouts/routing-kit/Sources/RoutingKit/TrieRouter.swift": [1632148408, 158950487]
