@@ -1,10 +1,11 @@
+
 import Foundation
 
-public class NineCells : Codeable {
+public class NineCells : Codable {
     
-   public let cells : [Cell]
+   public var cells : [Cell]
 
-    public init(cells:cells) {
+   public init(cells:[Cell]) {
         self.cells = cells        
                 }
     

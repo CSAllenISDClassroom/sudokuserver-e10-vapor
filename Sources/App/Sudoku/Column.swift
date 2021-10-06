@@ -1,3 +1,3 @@
 import Foundation
-public class Column : NineCell {    
+public class Column : NineCells {    
 }

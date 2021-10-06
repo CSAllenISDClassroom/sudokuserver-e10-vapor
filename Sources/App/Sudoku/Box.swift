@@ -1,3 +1,3 @@
 import Foundation
-public class Box : NineCell {
-
+public class Box : NineCells {
+}
