@@ -1,5 +1,3 @@
-
-
 import Vapor
 
 func routes(_ app: Application) throws {
@@ -25,15 +23,30 @@ func routes(_ app: Application) throws {
 
         return Response(status:HTTPResponseStatus.created,
                         headers:headers,
-                        body:Response.Body(string:"{\"boardID\":\(allGameData.count)}"))
+                        body:Response.Body(string:"{\"boardID\":\(allGameData.count - 1)}"))
     }
-    /*
-                                                                                                                                  app.get("games", ":id", "cells") { req -> String in
+    
+     app.get("games", ":id", "cells") { req -> Response in
+     
+         guard let id = req.parameters.get("id") else {
+             return Response(status:HTTPResponseStatus.badRequest)
+         }
+         var headers = HTTPHeaders()
+         headers.add(name: .contentType, value:"application.json")
+         let currentGame = allGameData[id]
+         let httpBody = allGameData[id].boardJSONString(board:currentGame)
+         return Response(status:HTTPResponseStatus.ok,
+                         headers:headers,
+                         body:Response.Body(string:httpBody))
+     }
+     /*
+     app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
 
-                                                                                                                                                                                                                                                                    guard let id = req.parameters.get("id"),
+               }
+       */  
+     
 
-
-     */
+     
 
 }
 
