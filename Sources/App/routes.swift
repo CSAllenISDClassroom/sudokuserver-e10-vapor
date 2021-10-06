@@ -1,3 +1,51 @@
+
+
+import Vapor
+
+func routes(_ app: Application) throws {
+    var allGameData : [Board] = []
+
+    app.get { req in
+        return "It works!"
+    }
+
+    app.post("games") { req -> Response in
+        let difficultyLevel = Difficulty.medium
+        allGameData.append(Board(boardDifficulty: difficultyLevel))
+
+        var headers = HTTPHeaders()
+        headers.add(name: .contentType, value:"application/json")
+
+        // an HTTP Request must have a request line, header and body
+
+        // status line
+        // Header
+        // Body
+        // in this case our body will be JSON data of the board ID
+
+        return Response(status:HTTPResponseStatus.created,
+                        headers:headers,
+                        body:Response.Body(string:"{\"boardID\":\(allGameData.count)}"))
+    }
+    /*
+                                                                                                                                  app.get("games", ":id", "cells") { req -> String in
+
+                                                                                                                                                                                                                                                                    guard let id = req.parameters.get("id"),
+
+
+     */
+
+}
+
+     
+
+
+
+
+
+
+
+/*
 import Vapor
 
 func routes(_ app: Application) throws {
@@ -36,3 +84,4 @@ func routes(_ app: Application) throws {
                         body:Response.Body(string:body))
     }    
 }
+ */ 
