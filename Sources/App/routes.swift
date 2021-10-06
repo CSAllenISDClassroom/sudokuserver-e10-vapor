@@ -34,13 +34,5 @@ func routes(_ app: Application) throws {
         return Response(status:HTTPResponseStatus.created,
                         headers:headers,
                         body:Response.Body(string:body))
-    }
-
-    // Running this GET Request will return a response with the supplied string
-    app.get("hello", ":name") { req -> String in
-        let name = req.parameters.get("name")!
-        return "Hello, \(name)!"
     }    
-
-    
 }
