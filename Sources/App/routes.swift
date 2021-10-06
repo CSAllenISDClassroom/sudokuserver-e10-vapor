@@ -44,18 +44,21 @@ func routes(_ app: Application) throws {
      }
 
      app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
-         guard let id : Int = req.parameters.get("id"),
-               let arrayID = Int(id),
+         // as : Int.self checks if id is an Int 
+         guard let id : Int = req.parameters.get("id", as : Int.self),
                let boxIndex = req.parameters.get("boxIndex"),
                let cellIndex = req.parameters.get("cellIndex"),
-               id < games.count && id >= 0
+               //               id < games.count && id >= 0
+               /*
                else {
              return Response(status:HTTPResponse.badRequest)
-         }
+             
+                */
          
          
          
-               }
+         
+     }
 
      
 
