@@ -1,4 +1,4 @@
-import Foundation
+ximport Foundation
 
 
 public class Board {
@@ -68,7 +68,7 @@ public class Board {
             finalRow.append(prerow)
         }
 
-        var finalCellRow : [[Cell]] = [[]]
+        var finalCellRow : [[Cell]] = []
         // convert integer array into cell array
         for row in 0 ... 8 {
             var singleCellRow : [Cell] = []
@@ -207,8 +207,30 @@ public class Board {
     }
 
     
- 
+    func boardJSONString(board:[[Cell]]) -> String {
+        let board = board
+        var jsonString = ""
+        let encoder = JSONEncoder()
 
+        for rows in 0 ... 8 {
+            for cells in 0 ... 8 {
+                guard let data = try? encoder.encode(board[rows][cells]),
+                      let string = String(data: data, encoding: .utf8) else {
+                    fatalError("Failed to encode data into json.")
+                }
+                jsonString += "\(string),"
+                
+        }
+        }
+        return jsonString
+    }
+
+
+        
+
+
+
+    
 
     
 }
