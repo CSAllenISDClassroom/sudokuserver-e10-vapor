@@ -28,22 +28,35 @@ func routes(_ app: Application) throws {
     
      app.get("games", ":id", "cells") { req -> Response in
      
-         guard let id = req.parameters.get("id") else {
+         guard let id = req.parameters.get("id"),
+               // make ID an integer so array can read it
+               let arrayID = Int(id)
+         else {
              return Response(status:HTTPResponseStatus.badRequest)
          }
          var headers = HTTPHeaders()
          headers.add(name: .contentType, value:"application.json")
-         let currentGame = allGameData[id]
-         let httpBody = allGameData[id].boardJSONString(board:currentGame)
+         let currentGame = allGameData[arrayID]
+         let httpBody = currentGame.boardJSONString()
          return Response(status:HTTPResponseStatus.ok,
                          headers:headers,
                          body:Response.Body(string:httpBody))
      }
-     /*
-     app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
 
+     app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
+         guard let id : Int = req.parameters.get("id"),
+               let arrayID = Int(id),
+               let boxIndex = req.parameters.get("boxIndex"),
+               let cellIndex = req.parameters.get("cellIndex"),
+               id < games.count && id >= 0
+               else {
+             return Response(status:HTTPResponse.badRequest)
+         }
+         
+         
+         
                }
-       */  
+
      
 
      
