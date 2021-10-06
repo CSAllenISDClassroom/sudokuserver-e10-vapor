@@ -1,8 +1,6 @@
-TEAM E10
-Vapor repository
+TEAM E10's Vapor Repository
 
-Team members
-
+Team members:
 - Akshat Sharma
 - Kush Gupta
 - Noah Chin
