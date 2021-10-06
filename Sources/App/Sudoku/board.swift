@@ -1,4 +1,4 @@
-ximport Foundation
+import Foundation
 
 
 public class Board {
