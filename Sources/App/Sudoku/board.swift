@@ -207,8 +207,8 @@ public class Board {
     }
 
     
-    func boardJSONString(board:[[Cell]]) -> String {
-        let board = board
+    func boardJSONString() -> String {
+
         var jsonString = ""
         let encoder = JSONEncoder()
 
