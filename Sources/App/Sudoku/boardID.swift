@@ -1,3 +1,5 @@
+
+/*
 public class BoardID {
 
     public var boardID : Dictionary<Int, Board> = [:]
@@ -19,3 +21,6 @@ public class BoardID {
     }
     
 }
+
+
+ */
