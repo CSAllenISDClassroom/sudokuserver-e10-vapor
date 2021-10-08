@@ -2,15 +2,27 @@ import Vapor
 
 func routes(_ app: Application) throws {
     var allGameData : [Board] = []
-
+    
     app.get { req in
         return "It works!"
     }
 
     app.post("games") { req -> Response in
-        let difficultyLevel = Difficulty.medium
-        allGameData.append(Board(boardDifficulty: difficultyLevel))
+        var difficultyLevel = Difficulty.medium
+        
+        do{
+            if let inputDifficulty = try req.content.decode(InputDifficulty.self).difficulty {
+                guard inputDifficulty == "easy" || inputDifficulty == "medium" || inputDifficulty == "hard" || inputDifficulty == "hell" else{
+                    return Response(status:.badRequest)
+                }
+                difficultyLevel = toDifficulty(inputDifficulty:inputDifficulty)
+            }
 
+        }catch{
+            print("[\(allGameData.count)] No inputDifficulty received: Setting difficulty to medium (default)")
+        }
+
+        allGameData.append(Board(boardDifficulty: difficultyLevel))
         var headers = HTTPHeaders()
         headers.add(name: .contentType, value:"application/json")
 
@@ -60,7 +72,7 @@ func routes(_ app: Application) throws {
              return Response(status:HTTPResponseStatus.badRequest)
          }
 
-         var input : Int?
+         var input : Int? = nil
          let place = xyConversion(box: boxIndex, cell: cellIndex)
 
          if let inputValue = try req.content.decode(InputValue.self).value {
