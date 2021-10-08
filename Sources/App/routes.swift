@@ -30,7 +30,8 @@ func routes(_ app: Application) throws {
      
          guard let id = req.parameters.get("id"),
                // make ID an integer so array can read it
-               let arrayID = Int(id)
+               let arrayID = Int(id),
+               arrayID < allGameData.count && arrayID >= 0
          else {
              return Response(status:HTTPResponseStatus.badRequest)
          }
@@ -38,79 +39,40 @@ func routes(_ app: Application) throws {
          headers.add(name: .contentType, value:"application.json")
          let currentGame = allGameData[arrayID]
          let httpBody = currentGame.boardJSONString()
+         print(allGameData[arrayID])
+         print("====")
+         print(httpBody)
+         print(currentGame)
          return Response(status:HTTPResponseStatus.ok,
                          headers:headers,
                          body:Response.Body(string:httpBody))
      }
 
+
      app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
-         // as : Int.self checks if id is an Int 
-         guard let id : Int = req.parameters.get("id", as : Int.self),
-               let boxIndex = req.parameters.get("boxIndex"),
-               let cellIndex = req.parameters.get("cellIndex"),
-               //               id < games.count && id >= 0
-               /*
-               else {
-             return Response(status:HTTPResponse.badRequest)
-             
-                */
+         guard let id : Int = req.parameters.get("id"),
+               let boxIndex : Int = req.parameters.get("boxIndex"),
+               let cellIndex : Int = req.parameters.get("cellIndex"),
+               id < allGameData.count && id >= 0,
+               boxIndex >= 0 && boxIndex < 9,
+               cellIndex >= 0 && cellIndex < 9
+         else {
+             return Response(status:HTTPResponseStatus.badRequest)
+         }
+
+         var input : Int?
+         let place = xyConversion(box: boxIndex, cell: cellIndex)
+
+         if let inputValue = try req.content.decode(InputValue.self).value {
+             guard inputValue >= 1 && inputValue <= 9 else {
+                 return Response(status:.badRequest)
+             }
+             input = inputValue
+         }
          
-         
-         
-         
+         print("[\(id)] Added \(String(describing:input)) at (\(place.0), \(place.1)).")
+         return Response(status:HTTPResponseStatus.noContent)
      }
-
-     
-
-     
-
-}
-
-     
-
-
-
-
-
-
-
-/*
-import Vapor
-
-func routes(_ app: Application) throws {
-    //array of boards
-    var games : [Board] = []
-    
-    //////////////////////////////////////////////////
-    // GET commands are used to retrieve a resource //
-    //////////////////////////////////////////////////
-
-    app.get { req in
-        return "It works!"
-    }
-
-
-    app.post("games") { req -> Response in
-        var difficultyLevel = Difficulty.medium
-
-        do {
-            guard let inputDifficulty = Board(difficulty: Difficulty.self)
-            else {
-                return Response(status:.badRequest)
-            }
-            difficultyLevel = inputDifficulty
-        }
-        catch{
-            print("[\(games.count)] No inputDifficulty received: Setting difficulty to medium (default)")
-        }
-        print("[\(games.count)] Difficulty:\(difficultyLevel). ", terminator:"")
-        games.append(Board(difficulty:difficultyLevel))
-        let body = "{\"boardID\":\(games.count-1)}"
-        var headers = HTTPHeaders()
-        headers.add(name: .contentType, value:"application/json")
-        return Response(status:HTTPResponseStatus.created,
-                        headers:headers,
-                        body:Response.Body(string:body))
-    }    
-}
- */ 
+                
+}         
+       
