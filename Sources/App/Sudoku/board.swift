@@ -9,13 +9,7 @@ public class Board {
     var columns : [Column] = []
     var boxes : [Box] = []
 
-
     private var completeBoard : [[Cell]] = []
-
-
-
-
-
 
     func createRandomCompletedSudoku() -> [[Cell]] {
         // Original number
@@ -83,12 +77,6 @@ public class Board {
         return finalCellRow
     }
 
-    
-
-
-
-
-    
     public init(boardDifficulty : Difficulty) {
         completeBoard = createRandomCompletedSudoku()
         self.board = removeBoardCells(board:completeBoard, difficulty:boardDifficulty)
@@ -97,8 +85,7 @@ public class Board {
         self.boxes = generateBox(board:board)
     }
     
-    
-
+   
     func generateRow(board: [[Cell]]) -> [Row] {
         var rowArray : [Row] = []
         // iterate through each array in a board, then iterate through each element of each array
@@ -147,8 +134,7 @@ public class Board {
         let newBoard = board
         var totalCellCount = 81
         
-        switch difficulty {
-            
+        switch difficulty {            
         case .easy :
             let endCellCount = Int.random(in: 41 ... 46)
             while totalCellCount > endCellCount {
@@ -199,7 +185,6 @@ public class Board {
                 totalCellCount -= 1                
 
             }
-
         default:
             fatalError("Difficulty does not exist, choose between easy, medium, or hard")
         }
@@ -224,13 +209,6 @@ public class Board {
         }
         return jsonString
     }
-
-
-        
-
-
-
-    
 
     
 }
