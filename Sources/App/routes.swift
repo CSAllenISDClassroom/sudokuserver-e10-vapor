@@ -7,32 +7,36 @@ func routes(_ app: Application) throws {
         return "It works!"
     }
 
+    // an HTTP Request must have a request line, header and body
+
+    // status line
+    // Header
+    // Body
+    // in this case our body will be JSON data of the board ID
+
     app.post("games") { req -> String in
-        //        let difficulty = try req.query.decode(Difficulty.self)
         guard let difficulty : String? = req.query["difficulty"]
         else {
             return("400 Bad Request, difficulty level not found, defaulting easy difficulty")
         }
-        
-        /*
-                  else {
-            return ("400 Bad Request, difficulty level not found")
-                  }
-                  
-         */
                   
         allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))
-
-        // an HTTP Request must have a request line, header and body
-
-        // status line
-        // Header
-        // Body
-        // in this case our body will be JSON data of the board ID
-
+        
         return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
     }
 
+
+    app.put("games", ":id", "cells", ":boxIndex", ":cellIndex") { req -> String in
+        guard let id : Int = req.parameters.get("id", as: Int.self),
+              let boxIndex = req.parameters.get("boxIndex", as: Int.self),
+              let cellIndex = req.parameters.get("cellIndex", as: Int.self)
+        else {
+            throw Abort(.badRequest, reason: "boxIndex and cellIndex MUST be integers")
+        }
+        
+        return String()
+    }
+    
     /*
      app.get("games", ":id", "cells") { req -> Response in
      
