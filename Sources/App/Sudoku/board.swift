@@ -77,7 +77,7 @@ public class Board {
         return finalCellRow
     }
 
-    public init(boardDifficulty : Difficulty) {
+    public init(boardDifficulty : String) {
         completeBoard = createRandomCompletedSudoku()
         self.board = removeBoardCells(board:completeBoard, difficulty:boardDifficulty)
         self.rows = generateRow(board:board)
@@ -130,12 +130,12 @@ public class Board {
     
 
     
-    public func removeBoardCells(board:[[Cell]],difficulty:Difficulty) -> [[Cell]] {        
+    public func removeBoardCells(board:[[Cell]],difficulty:String) -> [[Cell]] {        
         let newBoard = board
         var totalCellCount = 81
         
         switch difficulty {            
-        case .easy :
+        case "easy" :
             let endCellCount = Int.random(in: 41 ... 46)
             while totalCellCount > endCellCount {
 
@@ -152,7 +152,7 @@ public class Board {
 
             }
             
-        case .medium :
+        case "medium" :
         let endCellCount = Int.random(in: 31 ... 36)
         while totalCellCount > endCellCount {
 
@@ -169,8 +169,8 @@ public class Board {
 
         }
         
-        case .hard :
-            let endCellCount = Int.random(in: 17 ... 26)
+        case "hard" :
+            let endCellCount = Int.random(in: 21 ... 27)
             while totalCellCount > endCellCount {
 
                 var rowPosition = Int.random(in: 0 ... 8)
@@ -185,6 +185,24 @@ public class Board {
                 totalCellCount -= 1                
 
             }
+
+        case "hell" :
+            let endCellCount = Int.random(in: 17 ... 20)
+            while totalCellCount > endCellCount {
+                
+                var rowPosition = Int.random(in: 0 ... 8)
+                var columnPosition = Int.random(in: 0 ... 8)
+                
+                while newBoard[rowPosition][columnPosition].value == nil {
+                    rowPosition = Int.random(in: 0 ... 8)
+                    columnPosition = Int.random(in: 0 ... 8)
+                }
+                
+                newBoard[rowPosition][columnPosition].nilValue()
+                totalCellCount -= 1                
+                
+            }
+
         default:
             fatalError("Difficulty does not exist, choose between easy, medium, or hard")
         }

@@ -1,3 +1,4 @@
+/*
 import Vapor
 
 public func xyConversion(box: Int, cell: Int) -> (Int, Int) {
@@ -29,3 +30,6 @@ public struct InputValue : Content {
 public struct InputDifficulty : Content {
     var difficult : String?
 }
+
+
+ */

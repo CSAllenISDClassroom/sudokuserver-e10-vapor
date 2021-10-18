@@ -7,24 +7,21 @@ func routes(_ app: Application) throws {
         return "It works!"
     }
 
-    app.post("games") { req -> Response in
-        var difficultyLevel = Difficulty.medium
-        
-        do{
-            if let inputDifficulty = try req.content.decode(InputDifficulty.self).difficulty {
-                guard inputDifficulty == "easy" || inputDifficulty == "medium" || inputDifficulty == "hard" || inputDifficulty == "hell" else{
-                    return Response(status:.badRequest)
-                }
-                difficultyLevel = toDifficulty(inputDifficulty:inputDifficulty)
-            }
-
-        }catch{
-            print("[\(allGameData.count)] No inputDifficulty received: Setting difficulty to medium (default)")
+    app.post("games") { req -> String in
+        //        let difficulty = try req.query.decode(Difficulty.self)
+        guard let difficulty : String? = req.query["difficulty"]
+        else {
+            return("400 Bad Request, difficulty level not found, defaulting easy difficulty")
         }
-
-        allGameData.append(Board(boardDifficulty: difficultyLevel))
-        var headers = HTTPHeaders()
-        headers.add(name: .contentType, value:"application/json")
+        
+        /*
+                  else {
+            return ("400 Bad Request, difficulty level not found")
+                  }
+                  
+         */
+                  
+        allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))
 
         // an HTTP Request must have a request line, header and body
 
@@ -33,11 +30,10 @@ func routes(_ app: Application) throws {
         // Body
         // in this case our body will be JSON data of the board ID
 
-        return Response(status:HTTPResponseStatus.created,
-                        headers:headers,
-                        body:Response.Body(string:"{\"boardID\":\(allGameData.count - 1)}"))
+        return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
     }
-    
+
+    /*
      app.get("games", ":id", "cells") { req -> Response in
      
          guard let id = req.parameters.get("id"),
@@ -88,3 +84,7 @@ func routes(_ app: Application) throws {
                 
 }         
        
+
+       
+     */
+}

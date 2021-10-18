@@ -1,5 +1,6 @@
-public enum Difficulty {
-    case easy
-    case medium
-    case hard
+import Vapor
+import Foundation
+
+struct Difficulty: Content {
+    var difficulty: String?
 }
