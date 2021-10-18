@@ -19,9 +19,43 @@ func routes(_ app: Application) throws {
         else {
             return("400 Bad Request, difficulty level not found, defaulting easy difficulty")
         }
+<<<<<<< HEAD
                   
         allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))
         
+=======
+
+        switch difficulty {
+
+        case "easy":
+            allGameData.append(Board(boardDifficulty: "easy"))
+        case "medium":
+            allGameData.append(Board(boardDifficulty: "medium" ))
+        case "hard":
+            allGameData.append(Board(boardDifficulty: "hard"))
+        case "hell" :
+            allGameData.append(Board(boardDifficulty: "hell"))
+            default :
+                throw Abort(.badRequest, reason: "Your request \(difficulty) is invalid. Please choose a difficulty between easy, medium, hard and hell")
+        }
+        
+        /*
+                  else {
+            return ("400 Bad Request, difficulty level not found")
+                  }
+                  
+         */
+                  
+
+
+        // an HTTP Request must have a request line, header and body
+
+        // status line
+        // Header
+        // Body
+        // in this case our body will be JSON data of the board ID
+
+>>>>>>> d02395fe6e297804c2868fe17cb1e2d63efb4fa2
         return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
     }
 

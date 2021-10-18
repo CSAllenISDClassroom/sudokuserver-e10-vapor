@@ -11,21 +11,22 @@ public class Board {
 
     private var completeBoard : [[Cell]] = []
 
+    // This function created a random completed sudoku board
     func createRandomCompletedSudoku() -> [[Cell]] {
         // Original number
         let originalNum = [1,2,3,4,5,6,7,8,9]
 
         // Create line 1 to 9 and shuffle from original
-        let line1 = originalNum.shuffled()
-        let line2 = line1.shift(withDistance: 3)
-        let line3 = line2.shift(withDistance: 3)
-        let line4 = line3.shift(withDistance: 1)
-        let line5 = line4.shift(withDistance: 3)
+        let line1 = originalNum.shuffled() // creates shuffled array with numbers 1-9
+        let line2 = line1.shift(withDistance: 3) //shifts the array by 3
+        let line3 = line2.shift(withDistance: 3) //shifts previous array by 3
+        let line4 = line3.shift(withDistance: 1) //shifts previous array by 1
+        let line5 = line4.shift(withDistance: 3) // ...
         let line6 = line5.shift(withDistance: 3)
         let line7 = line6.shift(withDistance: 1)
         let line8 = line7.shift(withDistance: 3)
         let line9 = line8.shift(withDistance: 3)
-        // Final array
+        // Final array with all of the shifts
         let renewRow = [line1,line2,line3,line4,line5,line6,line7,line8,line9]
 
         // Pre-shuffle for column
@@ -76,7 +77,7 @@ public class Board {
         // Final, create the array into the [[Int]].
         return finalCellRow
     }
-
+    // Initializes the board difficulty
     public init(boardDifficulty : String) {
         completeBoard = createRandomCompletedSudoku()
         self.board = removeBoardCells(board:completeBoard, difficulty:boardDifficulty)
@@ -129,7 +130,7 @@ public class Board {
 
     
 
-    
+    // Function that removes board cells based on the difficulty (higher difficulty = more removed)
     public func removeBoardCells(board:[[Cell]],difficulty:String) -> [[Cell]] {        
         let newBoard = board
         var totalCellCount = 81
@@ -204,12 +205,12 @@ public class Board {
             }
 
         default:
-            fatalError("Difficulty does not exist, choose between easy, medium, or hard")
+            fatalError("Difficulty does not exist, choose between easy, medium, hard, or hell")
         }
         return newBoard
     }
 
-    
+    // This function encodes all of the returned data of the code into JSON for vapor
     func boardJSONString() -> String {
 
         var jsonString = ""
