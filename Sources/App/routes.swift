@@ -19,11 +19,9 @@ func routes(_ app: Application) throws {
         else {
             return("400 Bad Request, difficulty level not found, defaulting easy difficulty")
         }
-<<<<<<< HEAD
                   
         allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))
         
-=======
 
         switch difficulty {
 
@@ -54,8 +52,6 @@ func routes(_ app: Application) throws {
         // Header
         // Body
         // in this case our body will be JSON data of the board ID
-
->>>>>>> d02395fe6e297804c2868fe17cb1e2d63efb4fa2
         return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
     }
 
