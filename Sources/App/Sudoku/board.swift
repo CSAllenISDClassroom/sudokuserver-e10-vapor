@@ -229,6 +229,9 @@ public class Board {
         return jsonString
     }
 
+    func putValue(boxIndex: Int, cellIndex: Int, value: Int) {
+        self.board[boxIndex][cellIndex].value = value
+    }
     
 }
 

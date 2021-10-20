@@ -52,14 +52,23 @@ func routes(_ app: Application) throws {
 
     app.put("games", ":id", "cells", ":boxIndex", ":cellIndex") { req -> String in
         guard let id : Int = req.parameters.get("id", as: Int.self),
+              id < allGameData.count && id >= 0,
               let boxIndex = req.parameters.get("boxIndex", as: Int.self),
-              let cellIndex = req.parameters.get("cellIndex", as: Int.self)
+              boxIndex >= 0 && boxIndex < 9,
+              let cellIndex = req.parameters.get("cellIndex", as: Int.self),
+              cellIndex >= 0 && cellIndex < 9
         else {
             throw Abort(.badRequest, reason: "boxIndex and cellIndex MUST be integers")
         }
 
-        let userInput = req.body.string
-
+        //let userInput = req.body.string        
+    
+        guard let userInput = try? req.content.decode(InputValue.self),
+              let value: Int = userInput.value,
+              value >= 1 && value <= 9 else {
+            throw Abort(.badRequest, reason:"Invalid syntax, parmater, or avlue in query string")
+        } 
+        allGameData[id].putValue(boxIndex: boxIndex, cellIndex: cellIndex, value: value)
         
         return String()
     }
@@ -86,36 +95,5 @@ func routes(_ app: Application) throws {
                          headers:headers,
                          body:Response.Body(string:httpBody))
      }
-
-
-     app.put("games", ":id", "cells", " :boxIndex", " :cellIndex") { req -> Response in
-         guard let id : Int = req.parameters.get("id"),
-               let boxIndex : Int = req.parameters.get("boxIndex"),
-               let cellIndex : Int = req.parameters.get("cellIndex"),
-               id < allGameData.count && id >= 0,
-               boxIndex >= 0 && boxIndex < 9,
-               cellIndex >= 0 && cellIndex < 9
-         else {
-             return Response(status:HTTPResponseStatus.badRequest)
-         }
-
-         var input : Int? = nil
-         let place = xyConversion(box: boxIndex, cell: cellIndex)
-
-         if let inputValue = try req.content.decode(InputValue.self).value {
-             guard inputValue >= 1 && inputValue <= 9 else {
-                 return Response(status:.badRequest)
-             }
-             input = inputValue
-         }
-         
-         print("[\(id)] Added \(String(describing:input)) at (\(place.0), \(place.1)).")
-         return Response(status:HTTPResponseStatus.noContent)
-     }
-                
-}         
-       
-
-       
-     */
+*/
 }
