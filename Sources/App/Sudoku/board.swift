@@ -86,16 +86,17 @@ public class Board {
         self.boxes = generateBox(board:board)
     }
     
-   
+
     func generateRow(board: [[Cell]]) -> [Row] {
         var rowArray : [Row] = []
         // iterate through each array in a board, then iterate through each element of each array
         for cellArray in 0 ... 8 {
-            let rows = Row(cells:[Cell()])
+            let rows = Row(cells:[Cell()])            
             for cell in 0 ... 8 {
                 rows.cells.append(board[cellArray][cell])
             }            
             rowArray.append(rows)
+            // repeated(array: cellArray) // should return each row but with only the repeated cell values
         }        
         return rowArray
     }
@@ -232,6 +233,40 @@ public class Board {
     func putValue(boxIndex: Int, cellIndex: Int, value: Int) {
         self.board[boxIndex][cellIndex].value = value
     }
+
+
+    // WIP
+    // This function will be used for the repeated filter in the GET
+    // Requires an array of integers input, then outputs that array with only the duplicate numbers
+    func repeated(array: [Int?]) -> [Int]{
+
+        var duplicatesArray = [Int]()
+        var prevElement : Int = -1
+        var prevprevElement : Int = -1
+        var sortedArray = [Int]()
+
+        for optionalElement in cellsArray {
+            if optionalElement != nil {
+                sortedArray.append(optionalElement!)
+            }
+        }
+        sortedArray = sortedArray.sorted()
+
+
+        for element in sortedArray {
+            if(prevElement == element) {
+                duplicatesArray.append(element)
+                if prevprevElement != prevElement {
+                    duplicatesArray.append(prevElement)
+                }
+            }
+            prevprevElement = prevElement
+            prevElement = element
+        }
+        return duplicatesArray
+    }
+    
+
     
 }
 
