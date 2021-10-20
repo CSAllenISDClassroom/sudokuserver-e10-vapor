@@ -1,6 +1,8 @@
 import Vapor
 
 func routes(_ app: Application) throws {
+
+    // Collects a list of boards
     var allGameData : [Board] = []
     
     app.get { req in
@@ -72,28 +74,45 @@ func routes(_ app: Application) throws {
         
         return String()
     }
-    
-    /*
-     app.get("games", ":id", "cells") { req -> Response in
-     
-         guard let id = req.parameters.get("id"),
-               // make ID an integer so array can read it
-               let arrayID = Int(id),
-               arrayID < allGameData.count && arrayID >= 0
-         else {
-             return Response(status:HTTPResponseStatus.badRequest)
-         }
-         var headers = HTTPHeaders()
-         headers.add(name: .contentType, value:"application.json")
-         let currentGame = allGameData[arrayID]
-         let httpBody = currentGame.boardJSONString()
-         print(allGameData[arrayID])
-         print("====")
-         print(httpBody)
-         print(currentGame)
-         return Response(status:HTTPResponseStatus.ok,
-                         headers:headers,
-                         body:Response.Body(string:httpBody))
-     }
+           
+    app.get("games", ":id", "cells") { req -> String in
+
+        // Requests an ID, checks if they are legitimate IDs
+        guard let id = req.parameters.get("id"),
+              let arrayID = Int(id),
+              arrayID < allGameData.count && arrayID >= 0
+        else {
+            throw Abort(.badRequest, reason:"arrayID invalid")
+        }
+
+        // Convert a Board object into a JSON string
+        let currentGame = allGameData[arrayID]
+        let jsonString = currentGame.boardJSONString()
+        
+        return jsonString
+
+    }
+
+
+        /*
+        guard let id = req.parameters.get("id"),
+              // make ID an integer so array can read it
+              let arrayID = Int(id),
+              arrayID < allGameData.count && arrayID >= 0
+        else {
+            return Response(status:HTTPResponseStatus.badRequest)
+        }
+        var headers = HTTPHeaders()
+        headers.add(name: .contentType, value:"application.json")
+        let currentGame = allGameData[arrayID]
+        let httpBody = currentGame.boardJSONString()
+        print(allGameData[arrayID])
+        print("====")
+        print(httpBody)
+        print(currentGame)
+        return Response(status:HTTPResponseStatus.ok,
+                        headers:headers,
+                        body:Response.Body(string:httpBody))
+    }
 */
 }

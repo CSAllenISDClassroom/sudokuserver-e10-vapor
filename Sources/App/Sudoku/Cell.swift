@@ -3,17 +3,18 @@ import Foundation
 
 public class Cell : Codable  {
 
-    public var value : Int?
-
-    init() {
-        self.value = nil
-    }
-
-    init(value:Int?) {
-        self.value = value
-    }
+    //public let position: Position    
+    public var value: Int?    
     
+    init() {
+        //self.position = Position(boxIndex:nil, cellIndex:nil)
+        self.value = nil        
+    }
 
+    init(value:Int? /*,boxIndex:Int, cellIndex:Int*/) {
+        //self.position = Position(boxIndex:boxIndex, cellIndex:cellIndex) 
+        self.value = value
+    }    
 
     public func mutateValue(_ num:Int) {
         self.value = num
