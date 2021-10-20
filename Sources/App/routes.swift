@@ -37,6 +37,8 @@ func routes(_ app: Application) throws {
             allGameData.append(Board(boardDifficulty: "hard"))
         case "hell" :
             allGameData.append(Board(boardDifficulty: "hell"))
+        case nil :
+            throw Abort(.badRequest, reason: "Please put in a difficulty request. Choose a difficulty between easy,medium, hard and hell")                                      
             default :
                 throw Abort(.badRequest, reason: "Your request \(difficulty) is invalid. Please choose a difficulty between easy, medium, hard and hell")
         }
