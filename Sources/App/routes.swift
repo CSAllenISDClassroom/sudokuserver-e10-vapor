@@ -73,15 +73,11 @@ func routes(_ app: Application) throws {
     }
            
     app.get("games", ":id", "cells") { req -> String in
-        // Create single Query String to set filter
-        /*
+        // Create single Query String to set filter        
         guard let filter : String? = req.query["filter"]
         else {
             throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
         }
-        
-         */
-
         
         // Requests an ID, checks if they are legitimate IDs
         guard let id = req.parameters.get("id", as: Int .self ),
@@ -92,9 +88,23 @@ func routes(_ app: Application) throws {
 
         // Convert a Board object into a JSON string
         let currentGame = allGameData[id]
-        let jsonString = currentGame.boardJSONString()
+
+        switch filter {
+        case "all":
+                    let jsonString = currentGame.boardJSONString()        
+                    return jsonString
+        case "repeated":
+            print("hello")
+        case "incorrect":
+            print("hello")
+        default:
+            throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
+        }
         
-        return jsonString
+
+
+
+        return("hello")
 
     }
 
