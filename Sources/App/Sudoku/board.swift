@@ -329,7 +329,7 @@ public class Board {
                 let appendBox = board[b].cells[c].value
                 //s += String(appendBox)
                 if appendBox == nil {
-                    s += "\(appendBox)"
+                    s += String(describing:appendBox)
                 } else {
                     s += "\(appendBox!)"
                 }
@@ -464,6 +464,9 @@ public class Board {
     }
     
 
+
+
+    
     
 }
 

@@ -34,7 +34,7 @@ func routes(_ app: Application) throws {
         case nil :
             throw Abort(.badRequest, reason: "Please put in a difficulty request. Choose a difficulty between easy,medium, hard and hell")                                      
             default :
-                throw Abort(.badRequest, reason: "Your request \(difficulty) is invalid. Please choose a difficulty between easy, medium, hard and hell")
+                throw Abort(.badRequest, reason: "Your request is invalid. Please choose a difficulty between easy, medium, hard and hell")
         }
 
         return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
