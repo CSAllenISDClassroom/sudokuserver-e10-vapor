@@ -19,14 +19,8 @@ func routes(_ app: Application) throws {
     app.post("games") { req -> String in
         guard let difficulty : String? = req.query["difficulty"]
         else {
-            return("400 Bad Request, difficulty level not found, defaulting easy difficulty")
+            throw Abort(.badRequest, reason: "Requested difficulty in invalid, use values easy, medium, hard, or hell")
         }
-                  
-        allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))     
-
-        allGameData.append(Board(boardDifficulty: difficulty ?? "easy"))
-        
-
         switch difficulty {
 
         case "easy":
@@ -43,16 +37,11 @@ func routes(_ app: Application) throws {
                 throw Abort(.badRequest, reason: "Your request \(difficulty) is invalid. Please choose a difficulty between easy, medium, hard and hell")
         }
 
-        // an HTTP Request must have a request line, header and body
-
-        // status line
-        // Header
-        // Body
-        // in this case our body will be JSON data of the board ID
-
         return (" { \("id"):\(allGameData.count - 1)}, \(difficulty ?? "easy")")
     }
 
+
+    
 
     app.put("games", ":id", "cells", ":boxIndex", ":cellIndex") { req -> String in
         guard let id : Int = req.parameters.get("id", as: Int.self),
@@ -84,13 +73,18 @@ func routes(_ app: Application) throws {
     }
            
     app.get("games", ":id", "cells") { req -> String in
-
-        // Requests an ID, checks if they are legitimate IDs
-        guard let id = req.parameters.get("id"),
-              let arrayID = Int(id),
-              arrayID < allGameData.count && arrayID >= 0
+        // Create single Query String to set filter
+        guard let filter : String? = req.query["filter"]
         else {
-            throw Abort(.badRequest, reason:"arrayID invalid")
+            throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
+        }
+
+        
+        // Requests an ID, checks if they are legitimate IDs
+        guard let id = req.parameters.get("id", as: Int .self ),
+              id < allGameData.count && id >= 0
+        else {
+            throw Abort(.badRequest, reason:"Game id \(id) is invalid")
         }
 
         // Convert a Board object into a JSON string
