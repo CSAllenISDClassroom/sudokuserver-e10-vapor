@@ -355,6 +355,83 @@ public class Board {
     }
 
 
+    func convertBCtoRC(boxIndex: Int, cellIndex: Int) -> (Int, Int) {
+
+        /*                      
+           Given an input of boxIndex and cellIndex format, this function returns a translation into row and column format for the board. 
+         */
+        
+        var convertedRow = Int()
+        var convertedColumn = Int()
+
+        // Locate top left of each box
+        if boxIndex == 0 || boxIndex == 1 || boxIndex == 2 {
+            convertedRow = 0
+            if boxIndex == 0 {
+                convertedColumn = 0
+            } else if boxIndex == 1 {
+                convertedColumn = 3
+            } else if boxIndex == 2 {
+                convertedColumn = 6
+            }
+        }
+        else if boxIndex == 3 || boxIndex == 4 || boxIndex == 5 {
+            convertedRow = 3
+            if boxIndex == 3 {
+                convertedColumn = 0
+            } else if boxIndex == 4 {
+                convertedColumn = 3
+            } else if boxIndex == 5 {
+                convertedColumn = 6
+            }
+        }
+        else if boxIndex == 6 || boxIndex == 7 || boxIndex == 8 {
+            convertedRow = 6
+            if boxIndex == 6 {
+                convertedColumn = 0
+            } else if boxIndex == 7 {
+                convertedColumn = 3
+            } else if boxIndex == 8 {
+                convertedColumn = 6
+            }
+        }
+
+        // Manipulate positioning based on cellIndex
+        if cellIndex == 1{
+            convertedColumn += 1
+        }
+        else if cellIndex == 2{
+            convertedColumn += 2
+        }
+        else if cellIndex == 3{
+            convertedRow += 1
+        }
+        else if cellIndex == 4{
+            convertedRow += 1
+            convertedColumn += 1
+        }
+        else if cellIndex == 5{
+            convertedRow += 1
+            convertedColumn += 2
+        }
+        else if cellIndex == 6{
+            convertedRow += 2
+        }
+        else if cellIndex == 7{
+            convertedRow += 2
+            convertedColumn += 1
+        }
+        else if cellIndex == 8{
+            convertedRow += 2
+            convertedColumn += 2
+        }
+
+        let result = (convertedRow, convertedColumn)
+        return result
+    }
+    
+    
+
     // WIP
     // This function will be used for the repeated filter in the GET
     // Requires an array of integers input, then outputs that array with only the duplicate numbers
