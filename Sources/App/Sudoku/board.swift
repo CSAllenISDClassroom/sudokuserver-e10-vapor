@@ -72,11 +72,18 @@ public class Board {
             }
             finalCellRow.append(singleCellRow)
         }
-        
-        
+               
         // Final, create the array into the [[Int]].
         return finalCellRow
     }
+    
+/*
+  func convertTest(rowIndex: Int, columnIndex: Int) {
+        var boxIndex = 0
+        var cellIndex = 0                
+    }    
+ */
+    
     // Initializes the board difficulty
     public init(boardDifficulty : String) {
         completeBoard = createRandomCompletedSudoku()
@@ -113,22 +120,95 @@ public class Board {
         }
         return columnArray
     }
-
+/*    
     func generateBox(board: [[Cell]]) -> [Box] {
         var boxes : [Box] = []
         for offSetValues in 0 ... 8 {
-            let columnOffSet = (offSetValues % 3) * 3
-            let rowOffSet = (offSetValues / 3) * 3
+            let columnOffSet = (offSetValues % 3) * 3 // 0,3,6,0,3,6
+            let rowOffSet = (offSetValues / 3) * 3 // 0,3,6,0,3,6
             let box = Box(cells:[Cell()])
             for values in 0 ... 8 {
-                box.cells.append(board[rowOffSet + (values / 3)] [columnOffSet + (values / 3)])
+                box.cells.append(board[rowOffSet + (values % 3)] [columnOffSet + (values / 3)])
             }
             boxes.append(box)
         }
         return boxes
     }
+*/
 
+    func generateBox(board: [[Cell]]) -> [Box] {
+        var boxes = [Box]()
+        let box1 = Box(cells:[Cell()])
+        let box2 = Box(cells:[Cell()])
+        let box3 = Box(cells:[Cell()])
+        let box4 = Box(cells:[Cell()])
+        let box5 = Box(cells:[Cell()])
+        let box6 = Box(cells:[Cell()])
+        let box7 = Box(cells:[Cell()])
+        let box8 = Box(cells:[Cell()])
+        let box9 = Box(cells:[Cell()])
+        
+        //for _ in 0 ... 8 {
+        for row in 0 ... 8 {
+            for column in 0 ... 8 {
 
+                if row < 3 && column < 3 {
+                    let currentCell = board[row][column]
+                    box1.cells.append(currentCell)
+                }
+                if row < 3 && column < 6 && column > 2 {
+                    let currentCell = board[row][column]
+                    box2.cells.append(currentCell)
+                }
+                if row < 3 && column < 9 && column > 5 {
+                    let currentCell = board[row][column]
+                    box3.cells.append(currentCell)
+                }
+                if  column < 3 && row < 6 && row > 2 {
+                    let currentCell = board[row][column]
+                    box4.cells.append(currentCell)
+                }
+                if column < 6 && column > 2 && row < 6 && row > 2 {
+                    let currentCell = board[row][column]
+                    box5.cells.append(currentCell)
+                }
+                if row > 2 && row < 6 && column < 9 && column > 5 {
+                    let currentCell = board[row][column]
+                    box6.cells.append(currentCell)
+                }
+                if row > 5 && row < 9 && column < 3 {
+                    let currentCell = board[row][column]
+                    box7.cells.append(currentCell)
+                }
+                if row > 5 && row < 9 && column > 2 && column < 6 {
+                    let currentCell = board[row][column]
+                    box8.cells.append(currentCell)
+                }
+                if row > 5 && row < 9 && column > 5 && column < 9 {
+                    let currentCell = board[row][column]
+                    box9.cells.append(currentCell)
+                }
+
+            }
+            //boxes.append(box)
+            //box.removeAll()
+        }
+        //}
+        boxes.append(box1)
+        boxes.append(box2)
+        boxes.append(box3)
+        boxes.append(box4)
+        boxes.append(box5)
+        boxes.append(box6)
+        boxes.append(box7)
+        boxes.append(box8)
+        boxes.append(box9)
+        
+        return boxes // boxes[0-8][0-8]
+        
+    }
+
+    
     
 
     // Function that removes board cells based on the difficulty (higher difficulty = more removed)
@@ -217,16 +297,16 @@ public class Board {
         var jsonString = ""
         let encoder = JSONEncoder()
 
-        for rows in 0 ... 8 {
-            for cells in 0 ... 8 {
-                guard let data = try? encoder.encode(board[rows][cells]),
+//        for rows in 0 ... 8 {
+  //          for cells in 0 ... 8 {
+                guard let data = try? encoder.encode(generateBox(board:board)),          //(board[rows][cells]), board[boxIndex][cellIndex]
                       let string = String(data: data, encoding: .utf8) else {
                     fatalError("Failed to encode data into json.")
                 }
                 jsonString += "\(string),"
                 
-        }
-        }
+    //    }
+      //  }
         return jsonString
     }
 
@@ -245,7 +325,7 @@ public class Board {
         var prevprevElement : Int = -1
         var sortedArray = [Int]()
 
-        for optionalElement in cellsArray {
+        for optionalElement in array {
             if optionalElement != nil {
                 sortedArray.append(optionalElement!)
             }
