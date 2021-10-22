@@ -4,7 +4,8 @@ import Foundation
 public class Board {
 
     // properties of a board requires the board made up of an array of cells, rows, columns, boxes, difficulty
-    var board : [[Cell]] = []
+    //    var board : [[Cell]] = []
+    var board : [Box] = []
     var rows : [Row] = []
     var columns : [Column] = []
     var boxes : [Box] = []
@@ -88,9 +89,9 @@ public class Board {
     public init(boardDifficulty : String) {
         completeBoard = createRandomCompletedSudoku()
         self.board = removeBoardCells(board:completeBoard, difficulty:boardDifficulty)
-        self.rows = generateRow(board:board)
-        self.columns = generateColumn(board:board)
-        self.boxes = generateBox(board:board)
+        self.rows = generateRow(board:completeBoard)
+        self.columns = generateColumn(board:completeBoard)
+        self.boxes = generateBox(board:completeBoard)
     }
     
 
@@ -212,7 +213,7 @@ public class Board {
     
 
     // Function that removes board cells based on the difficulty (higher difficulty = more removed)
-    public func removeBoardCells(board:[[Cell]],difficulty:String) -> [[Cell]] {        
+    public func removeBoardCells(board:[[Cell]],difficulty:String) -> [Box] {        
         let newBoard = board
         var totalCellCount = 81
         
@@ -288,7 +289,7 @@ public class Board {
         default:
             fatalError("Difficulty does not exist, choose between easy, medium, hard, or hell")
         }
-        return newBoard
+        return generateBox(board:newBoard)
     }
 
     // This function encodes all of the returned data of the code into JSON for vapor
@@ -313,7 +314,7 @@ public class Board {
     
      */
     public func boardJSONString() -> String {
-        let board = generateBox(board:board)
+        let board = board
         var s : String = "{\"board\":["
         for b in 0 ..< board.count {
             s += "{\"cells\":["
@@ -350,7 +351,7 @@ public class Board {
 
     
     func putValue(boxIndex: Int, cellIndex: Int, value: Int) {
-        self.board[boxIndex][cellIndex].value = value
+        self.board[boxIndex].cells[cellIndex].value = value
     }
 
 

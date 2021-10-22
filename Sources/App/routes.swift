@@ -74,21 +74,24 @@ func routes(_ app: Application) throws {
            
     app.get("games", ":id", "cells") { req -> String in
         // Create single Query String to set filter
+        /*
         guard let filter : String? = req.query["filter"]
         else {
             throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
         }
+        
+         */
 
         
         // Requests an ID, checks if they are legitimate IDs
         guard let id = req.parameters.get("id", as: Int .self ),
               id < allGameData.count && id >= 0
         else {
-            throw Abort(.badRequest, reason:"Game id \(id) is invalid")
+            throw Abort(.badRequest, reason:"Game id  is invalid")
         }
 
         // Convert a Board object into a JSON string
-        let currentGame = allGameData[arrayID]
+        let currentGame = allGameData[id]
         let jsonString = currentGame.boardJSONString()
         
         return jsonString
