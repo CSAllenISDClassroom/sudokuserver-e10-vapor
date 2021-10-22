@@ -56,13 +56,19 @@ func routes(_ app: Application) throws {
 
     app.put("games", ":id", "cells", ":boxIndex", ":cellIndex") { req -> String in
         guard let id : Int = req.parameters.get("id", as: Int.self),
-              id < allGameData.count && id >= 0,
-              let boxIndex = req.parameters.get("boxIndex", as: Int.self),
-              boxIndex >= 0 && boxIndex < 9,
-              let cellIndex = req.parameters.get("cellIndex", as: Int.self),
+              id < allGameData.count && id >= 0
+        else {
+            throw Abort(.badRequest, reason: "(game ID is not a valid game)")
+              }
+        guard let cellIndex = req.parameters.get("cellIndex", as: Int.self),
               cellIndex >= 0 && cellIndex < 9
         else {
-            throw Abort(.badRequest, reason: "boxIndex and cellIndex MUST be integers")
+            throw Abort(.badRequest, reason: "(cellIndex is out of range 0 ... 8)")
+        }
+        guard let boxIndex = req.parameters.get("boxIndex", as: Int.self),
+              boxIndex >= 0 && boxIndex < 9
+        else {
+            throw Abort(.badRequest, reason: "(boxIndex is out of range 0 ... 8)")
         }
 
         //let userInput = req.body.string        
@@ -70,7 +76,7 @@ func routes(_ app: Application) throws {
         guard let userInput = try? req.content.decode(InputValue.self),
               let value: Int = userInput.value,
               value >= 1 && value <= 9 else {
-            throw Abort(.badRequest, reason:"Invalid syntax, parmater, or avlue in query string")
+            throw Abort(.badRequest, reason:"(value is out of range 0 ... 8)")
         } 
         allGameData[id].putValue(boxIndex: boxIndex, cellIndex: cellIndex, value: value)
         
