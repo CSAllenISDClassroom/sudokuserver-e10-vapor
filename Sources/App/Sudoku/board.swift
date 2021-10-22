@@ -292,8 +292,8 @@ public class Board {
     }
 
     // This function encodes all of the returned data of the code into JSON for vapor
+    /*
     func boardJSONString() -> String {
-
         var jsonString = ""
         let encoder = JSONEncoder()
 
@@ -310,6 +310,45 @@ public class Board {
         return jsonString
     }
 
+    
+     */
+    public func boardJSONString() -> String {
+        let board = generateBox(board:board)
+        var s : String = "{\"board\":["
+        for b in 0 ..< board.count {
+            s += "{\"cells\":["
+            var addedACell = false
+            for c in 0 ..< 9 { // type of expression is ambigious without more context
+                //let tile = board[b][c]
+                //let pos = BCtoXY(b:b,c:c)
+                //if shouldBeFiltered(filter:filter, xPos:pos.0, yPos:pos.1) {continue}
+                s += "{\"position\":{\"boxIndex\":\(b),\"cellIndex\":\(c)},\"value\":"
+                //if tile.value == nil {s += "null"}
+                //else {
+                let appendBox = board[b].cells[c].value
+                //s += String(appendBox)
+                if appendBox == nil {
+                    s += "\(appendBox)"
+                } else {
+                    s += "\(appendBox!)"
+                }
+                //print(appendBox)
+                //s += String(boxes[b][c])
+                 // }
+                s += "},"
+                addedACell = true
+            }
+            s += "\n"
+            if addedACell { s = String(s[...s.index(s.endIndex, offsetBy:-2)]) }
+            if b == board.count-1 {s += "]}"}
+            else {s += "]},"}
+        }
+        s += "]}"
+        print(s)
+        return s
+    }
+
+    
     func putValue(boxIndex: Int, cellIndex: Int, value: Int) {
         self.board[boxIndex][cellIndex].value = value
     }
