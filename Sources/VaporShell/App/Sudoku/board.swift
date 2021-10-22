@@ -136,7 +136,7 @@ public class Board {
         return boxes
     }
 */
-
+    // This function converts the board to be in terms of boxes and cells rather than rows and columns
     func generateBox(board: [[Cell]]) -> [Box] {
         var boxes = [Box]()
         let box1 = Box(cells:[Cell()])
@@ -149,7 +149,6 @@ public class Board {
         let box8 = Box(cells:[Cell()])
         let box9 = Box(cells:[Cell()])
         
-        //for _ in 0 ... 8 {
         for row in 0 ... 8 {
             for column in 0 ... 8 {
 
@@ -211,8 +210,9 @@ public class Board {
 
     
     
-
-    // Function that removes board cells based on the difficulty (higher difficulty = more removed)
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+    // Function that removes board cells based on the difficulty (higher difficulty = more removed) //
+    //////////////////////////////////////////////////////////////////////////////////////////////////
     public func removeBoardCells(board:[[Cell]],difficulty:String) -> [Box] {        
         let newBoard = board
         var totalCellCount = 81
@@ -292,27 +292,9 @@ public class Board {
         return generateBox(board:newBoard)
     }
 
-    // This function encodes all of the returned data of the code into JSON for vapor
-    /*
-    func boardJSONString() -> String {
-        var jsonString = ""
-        let encoder = JSONEncoder()
-
-//        for rows in 0 ... 8 {
-  //          for cells in 0 ... 8 {
-                guard let data = try? encoder.encode(generateBox(board:board)),          //(board[rows][cells]), board[boxIndex][cellIndex]
-                      let string = String(data: data, encoding: .utf8) else {
-                    fatalError("Failed to encode data into json.")
-                }
-                jsonString += "\(string),"
-                
-    //    }
-      //  }
-        return jsonString
-    }
-
-    
-     */
+    ////////////////////////////////////////////////////////////
+    // This function converts the board data into JSON format //
+    ////////////////////////////////////////////////////////////
     public func boardJSONString() -> String {
         let board = board
         var s : String = "{\"board\":["
@@ -348,8 +330,10 @@ public class Board {
         print(s)
         return s
     }
-
     
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    // This function is used by the PUT command in order to insert/replace a value in a cell //
+    ///////////////////////////////////////////////////////////////////////////////////////////
     func putValue(boxIndex: Int, cellIndex: Int, value: Int) {
         self.board[boxIndex].cells[cellIndex].value = value
     }
