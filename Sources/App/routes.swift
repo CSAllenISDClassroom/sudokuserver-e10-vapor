@@ -91,12 +91,14 @@ func routes(_ app: Application) throws {
 
         switch filter {
         case "all":
-                    let jsonString = currentGame.boardJSONString()        
-                    return jsonString
-        case "repeated":
-            print("hello")
-        case "incorrect":
-            print("hello")
+            let jsonString = currentGame.boardJSONString()        
+            return jsonString
+        case "repeated":           
+            let jsonString = currentGame.boardJSONString()        
+            return jsonString
+        case "incorrect":          
+            let jsonString = currentGame.boardJSONString()        
+            return jsonString
         default:
             throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
         }
