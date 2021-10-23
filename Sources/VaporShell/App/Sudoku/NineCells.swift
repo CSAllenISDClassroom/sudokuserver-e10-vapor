@@ -9,5 +9,13 @@ public class NineCells : Codable {
     public init(cells:[Cell]) {
         self.cells = cells        
     }
+
+    public init(boxIndex: Int) {
+        var celles = [Cell]()
+        for cellIndex in 0 ..< 9 {
+            celles.append(Cell(boxIndex: boxIndex, cellIndex: cellIndex))
+        }
+        self.cells = celles
+    }
     
 }

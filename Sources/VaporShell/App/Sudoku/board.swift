@@ -1,19 +1,17 @@
 import Foundation
 
 
-public class Board {
-
-    // properties of a board requires the board made up of an array of cells, rows, columns, boxes, difficulty
-    //    var board : [[Cell]] = []
+public class Board : Codable {
+    
+//    create the properties of the board class
     var board : [Box] = []
-    var rows : [Row] = []
-    var columns : [Column] = []
     var boxes : [Box] = []
+    private var completedBoxes : [Box] = []
 
     private var completeBoard : [[Cell]] = []
 
     // This function created a random completed sudoku board
-    func createRandomCompletedSudoku() -> [[Cell]] {
+    private func createRandomCompletedSudoku() -> [[Cell]] {
         // Original number
         let originalNum = [1,2,3,4,5,6,7,8,9]
 
@@ -78,115 +76,136 @@ public class Board {
         return finalCellRow
     }
     
-/*
-  func convertTest(rowIndex: Int, columnIndex: Int) {
-        var boxIndex = 0
-        var cellIndex = 0                
-    }    
- */
+
     
     // Initializes the board difficulty
     public init(boardDifficulty : String) {
         completeBoard = createRandomCompletedSudoku()
         self.board = removeBoardCells(board:completeBoard, difficulty:boardDifficulty)
-        self.rows = generateRow(board:completeBoard)
-        self.columns = generateColumn(board:completeBoard)
         self.boxes = generateBox(board:completeBoard)
+        self.completedBoxes = generateBox(board:completeBoard)
     }
     
+    public func filter(filter: String) -> String {
+        let board = board
+        let completedBoard = completedBoxes
+        var incorrectCells : [Cell] = []
+        let encoder = JSONEncoder()
+        
+        switch filter {
 
-    func generateRow(board: [[Cell]]) -> [Row] {
-        var rowArray : [Row] = []
-        // iterate through each array in a board, then iterate through each element of each array
-        for cellArray in 0 ... 8 {
-            let rows = Row(cells:[Cell()])            
-            for cell in 0 ... 8 {
-                rows.cells.append(board[cellArray][cell])
-            }            
-            rowArray.append(rows)
-            // repeated(array: cellArray) // should return each row but with only the repeated cell values
-        }        
-        return rowArray
-    }
-
-
-    func generateColumn(board: [[Cell]]) -> [Column] {
-        var columnArray : [Column] = []
-        for cellArray in 0 ... 8 {
-            let columns = Column(cells:[Cell()])
-            for cell in 0 ... 8 {
-                columns.cells.append(board[cell][cellArray])
+        case "all":
+            let toJSONBoard = board
+            
+            var finalJSON : String = "{\"board\":"
+            guard let data = try? encoder.encode(toJSONBoard),
+                  let json = String(data: data, encoding: .utf8)
+            else {
+                fatalError("Failed to encode data into JSON.")            
             }
-            columnArray.append(columns)
-        }
-        return columnArray
-    }
-/*    
-    func generateBox(board: [[Cell]]) -> [Box] {
-        var boxes : [Box] = []
-        for offSetValues in 0 ... 8 {
-            let columnOffSet = (offSetValues % 3) * 3 // 0,3,6,0,3,6
-            let rowOffSet = (offSetValues / 3) * 3 // 0,3,6,0,3,6
-            let box = Box(cells:[Cell()])
-            for values in 0 ... 8 {
-                box.cells.append(board[rowOffSet + (values % 3)] [columnOffSet + (values / 3)])
+            finalJSON += json
+            finalJSON += "}"
+            return finalJSON
+            
+        case "incorrect":
+            
+            for boxIndex in 0 ..< 9 {                
+                for cellIndex in 0 ..< 9 {
+                    if board[boxIndex].cells[cellIndex].value != completedBoard[boxIndex].cells[cellIndex].value {
+                        incorrectCells.append(board[boxIndex].cells[cellIndex])
+                    }
+                }
             }
-            boxes.append(box)
+            let toJSONCells = incorrectCells
+            
+            var finalJSON : String = "{\"board\":"
+            guard let data = try? encoder.encode(toJSONCells),
+                  let json = String(data: data, encoding: .utf8)
+            else {
+                fatalError("Failed to encode data into JSON.")            
+            }
+            finalJSON += json
+            finalJSON += "}"
+            return finalJSON
+/* WIP
+        case "repeated":
+            let checkedBoxes = board
+            for boxIndex in 0 ..< 9 {
+                for cellIndex in 0 ..< 9 {
+                    let valueInQuestion = board[boxIndex].cells[cellIndex]
+                    if cellIndex = 0 || cellIndex = 1 || cellIndex = 2 && boxIndex < 2{
+                        for subBoxIndex in 0 ... 2 {
+                            for subCellIndex in 0 ... 2{
+                                
+                            }
+                        }
+                        
+                    }
+                }
+                
+                             
+                         }
+                         
+ */
+            
+        default :
+            fatalError("Bad Request, use a valid filter")
         }
-        return boxes
+        
+
     }
-*/
     // This function converts the board to be in terms of boxes and cells rather than rows and columns
-    func generateBox(board: [[Cell]]) -> [Box] {
+    private func generateBox(board: [[Cell]]) -> [Box] {
         var boxes = [Box]()
-        let box1 = Box(cells:[Cell()])
-        let box2 = Box(cells:[Cell()])
-        let box3 = Box(cells:[Cell()])
-        let box4 = Box(cells:[Cell()])
-        let box5 = Box(cells:[Cell()])
-        let box6 = Box(cells:[Cell()])
-        let box7 = Box(cells:[Cell()])
-        let box8 = Box(cells:[Cell()])
-        let box9 = Box(cells:[Cell()])
+                
+        let box1 = Box(boxIndex: 0)
+        let box2 = Box(boxIndex: 1)
+        let box3 = Box(boxIndex: 2)
+        let box4 = Box(boxIndex: 3)
+        let box5 = Box(boxIndex: 4)
+        let box6 = Box(boxIndex: 5)
+        let box7 = Box(boxIndex: 6)
+        let box8 = Box(boxIndex: 7)
+        let box9 = Box(boxIndex: 8)
         
         for row in 0 ... 8 {
             for column in 0 ... 8 {
 
                 if row < 3 && column < 3 {
                     let currentCell = board[row][column]
-                    box1.cells.append(currentCell)
+                    box1.cells[column].mutateValue(currentCell.value)
                 }
                 if row < 3 && column < 6 && column > 2 {
                     let currentCell = board[row][column]
-                    box2.cells.append(currentCell)
+                    box2.cells[column].mutateValue(currentCell.value)
                 }
                 if row < 3 && column < 9 && column > 5 {
                     let currentCell = board[row][column]
-                    box3.cells.append(currentCell)
+                    box3.cells[column].mutateValue(currentCell.value)                                      
                 }
                 if  column < 3 && row < 6 && row > 2 {
                     let currentCell = board[row][column]
-                    box4.cells.append(currentCell)
+                    box4.cells[column].mutateValue(currentCell.value)
                 }
                 if column < 6 && column > 2 && row < 6 && row > 2 {
                     let currentCell = board[row][column]
-                    box5.cells.append(currentCell)
+                    box5.cells[column].mutateValue(currentCell.value)
                 }
                 if row > 2 && row < 6 && column < 9 && column > 5 {
                     let currentCell = board[row][column]
-                    box6.cells.append(currentCell)
+                    box6.cells[column].mutateValue(currentCell.value)
                 }
                 if row > 5 && row < 9 && column < 3 {
                     let currentCell = board[row][column]
-                    box7.cells.append(currentCell)
+                    box7.cells[column].mutateValue(currentCell.value)
                 }
                 if row > 5 && row < 9 && column > 2 && column < 6 {
                     let currentCell = board[row][column]
-                    box8.cells.append(currentCell)
+                    box8.cells[column].mutateValue(currentCell.value)
                 }
                 if row > 5 && row < 9 && column > 5 && column < 9 {
                     let currentCell = board[row][column]
-                    box9.cells.append(currentCell)
+                    box9.cells[column].mutateValue(currentCell.value)
                 }
 
             }
@@ -213,7 +232,7 @@ public class Board {
     //////////////////////////////////////////////////////////////////////////////////////////////////
     // Function that removes board cells based on the difficulty (higher difficulty = more removed) //
     //////////////////////////////////////////////////////////////////////////////////////////////////
-    public func removeBoardCells(board:[[Cell]],difficulty:String) -> [Box] {        
+    private func removeBoardCells(board:[[Cell]],difficulty:String) -> [Box] {        
         let newBoard = board
         var totalCellCount = 81
         
@@ -295,41 +314,25 @@ public class Board {
     ////////////////////////////////////////////////////////////
     // This function converts the board data into JSON format //
     ////////////////////////////////////////////////////////////
-    public func boardJSONString() -> String {
-        let board = board
-        var s : String = "{\"board\":["
-        for b in 0 ..< board.count {
-            s += "{\"cells\":["
-            var addedACell = false
-            for c in 0 ..< 9 { // type of expression is ambigious without more context
-                //let tile = board[b][c]
-                //let pos = BCtoXY(b:b,c:c)
-                //if shouldBeFiltered(filter:filter, xPos:pos.0, yPos:pos.1) {continue}
-                s += "{\"position\":{\"boxIndex\":\(b),\"cellIndex\":\(c)},\"value\":"
-                //if tile.value == nil {s += "null"}
-                //else {
-                let appendBox = board[b].cells[c].value
-                //s += String(appendBox)
-                if appendBox == nil {
-                    s += String(describing:appendBox)
-                } else {
-                    s += "\(appendBox!)"
-                }
-                //print(appendBox)
-                //s += String(boxes[b][c])
-                 // }
-                s += "},"
-                addedACell = true
-            }
-            s += "\n"
-            if addedACell { s = String(s[...s.index(s.endIndex, offsetBy:-2)]) }
-            if b == board.count-1 {s += "]}"}
-            else {s += "]},"}
+     
+
+    func toJSON() -> String {
+        let toJSONBoard = board
+        let encoder = JSONEncoder()
+        var finalJSON : String = "{\"board\":"
+        guard let data = try? encoder.encode(toJSONBoard),
+              let json = String(data: data, encoding: .utf8)
+        else {
+            fatalError("Failed to encode data into JSON.")            
         }
-        s += "]}"
-        print(s)
-        return s
+        finalJSON += json
+        finalJSON += "}"
+        return finalJSON
     }
+
+
+
+
     
     ///////////////////////////////////////////////////////////////////////////////////////////
     // This function is used by the PUT command in order to insert/replace a value in a cell //
@@ -414,39 +417,7 @@ public class Board {
         return result
     }
     
-    
-
-    // WIP
-    // This function will be used for the repeated filter in the GET
-    // Requires an array of integers input, then outputs that array with only the duplicate numbers
-    func repeated(array: [Int?]) -> [Int]{
-
-        var duplicatesArray = [Int]()
-        var prevElement : Int = -1
-        var prevprevElement : Int = -1
-        var sortedArray = [Int]()
-
-        for optionalElement in array {
-            if optionalElement != nil {
-                sortedArray.append(optionalElement!)
-            }
-        }
-        sortedArray = sortedArray.sorted()
-
-
-        for element in sortedArray {
-            if(prevElement == element) {
-                duplicatesArray.append(element)
-                if prevprevElement != prevElement {
-                    duplicatesArray.append(prevElement)
-                }
-            }
-            prevprevElement = prevElement
-            prevElement = element
-        }
-        return duplicatesArray
-    }
-    
+        
 
 
 

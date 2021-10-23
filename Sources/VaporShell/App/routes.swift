@@ -9,13 +9,6 @@ func routes(_ app: Application) throws {
         return "It works!"
     }
 
-    // an HTTP Request must have a request line, header and body
-
-    // status line
-    // Header
-    // Body
-    // in this case our body will be JSON data of the board ID
-
     app.post("games") { req -> String in
         guard let difficulty : String? = req.query["difficulty"]
         else {
@@ -91,45 +84,20 @@ func routes(_ app: Application) throws {
 
         switch filter {
         case "all":
-            let jsonString = currentGame.boardJSONString()        
-            return jsonString
-        case "repeated":           
-            let jsonString = currentGame.boardJSONString()        
+            let allCells = currentGame.filter(filter:"all")
+            return allCells
+        case "repeated":            
+            let jsonString = currentGame.filter(filter:"all")
             return jsonString
         case "incorrect":          
-            let jsonString = currentGame.boardJSONString()        
-            return jsonString
+            let incorrectCells = currentGame.filter(filter:"incorrect")
+            return incorrectCells
         default:
             throw Abort(.badRequest, reason: "Filter is unsupported, choose between All, incorrect, or repeated")
-        }
-        
-
-
-
-        //return(String())
+        }        
 
     }
 
 
-        /*
-        guard let id = req.parameters.get("id"),
-              // make ID an integer so array can read it
-              let arrayID = Int(id),
-              arrayID < allGameData.count && arrayID >= 0
-        else {
-            return Response(status:HTTPResponseStatus.badRequest)
-        }
-        var headers = HTTPHeaders()
-        headers.add(name: .contentType, value:"application.json")
-        let currentGame = allGameData[arrayID]
-        let httpBody = currentGame.boardJSONString()
-        print(allGameData[arrayID])
-        print("====")
-        print(httpBody)
-        print(currentGame)
-        return Response(status:HTTPResponseStatus.ok,
-                        headers:headers,
-                        body:Response.Body(string:httpBody))
-    }
-*/
+ 
 }
