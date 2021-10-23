@@ -3,7 +3,7 @@ import Foundation
 
 public class Cell : Codable  {
 
-    //public let position: Position    
+    // Cell class stores a value, and a position which can be determined in higher object levels such as board and box class
 
     public var position : Position 
     public var value: Int?        

@@ -2,7 +2,7 @@ import Foundation
 
 public class NineCells : Codable {
     
-    // Class NineCells denotes the parent class of Class Row, Column, and Box, and contains an array of Cells
+    // NineCells will be the class which class boxes inherits
     
     public var cells : [Cell]
     
