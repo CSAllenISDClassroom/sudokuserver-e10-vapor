@@ -4,9 +4,9 @@ import Foundation
 public class Cell : Codable  {
 
     //public let position: Position    
-    public var value: Int?    
+
     public var position : Position 
-    
+    public var value: Int?        
     init() {
         self.position = Position(boxIndex:nil, cellIndex:nil)
         self.value = nil        
